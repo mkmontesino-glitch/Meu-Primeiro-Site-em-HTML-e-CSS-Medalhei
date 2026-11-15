@@ -25,12 +25,28 @@
                 <div class="bloco-main-text-tras">
                     <div class="bloco-main-text-frente">
                         <div class="main-texto">
-                            <p>Preencha este formulario com dados ficticios para enviar uma mensagem para mim! (não funciona realmente)</p>
+                            <p>Preencha este formulario com dados ficticios para enviar uma mensagem para mim! (não funciona realmente então nenhuma informação é salva ou enviada por email!)</p>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
+        <nav>
+            <div class="centralizar">
+                <div class="bloco-main-text-tras">
+                    <div class="bloco-main-text-frente">
+                        <div class="textos">
+                            <ul>
+                                <li><a href="about.html">Página onde estão todas as listas</a></li><br>
+                                <li><a href="contact.html">Página de contato</a> </li><br>
+                                <li><a href="index.html">Página inicial</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div class="formulario-caixa-topo">
             <h1>
@@ -41,12 +57,12 @@
         <div class="formulario-caixa-baixo">
 
             
-            <form>
+            <form method="get">
                 <label for="email">Email</label>
-                <input type="text" placeholder="place.holder@gmail.com">
+                <input type="email" placeholder="place.holder@gmail.com">
                     
                 <label for="nome">Nome</label>
-                <input type="textarea" placeholder="Maria Clara">
+                <input type="text" placeholder="Maria Clara">
                     
                 <label for="pronomes">Pronomes</label>
                 <select>
@@ -57,7 +73,7 @@
                     <option value="2">Outro...</option>
                 </select>
                     
-                <label for="email">Comentário</label>
+                <label for="comentario">Comentário</label>
                 <input type="textarea" id="email" placeholder="Adiciona olimpiada x...">
             </form>
 
