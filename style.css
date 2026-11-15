@@ -114,7 +114,7 @@ body {
 
     display:flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .texto-caixas-topo{
@@ -243,7 +243,21 @@ label{
 }
 
 @media (max-width: 540px){
-    
+    .olimpiadas{
+        border: 5px solid;
+        border-radius: 10%;
+
+        border-color: #968c00;
+        background-color: #ffcc3f;
+
+        padding: 5%;
+        margin: 3%;
+        width: 105%;
+
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 footer{
