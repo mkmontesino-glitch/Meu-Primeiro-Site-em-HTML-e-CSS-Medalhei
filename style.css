@@ -60,6 +60,7 @@ header {
 body {
     background-image: url("images/Fundo.png");
     font-family: cursive;
+    background-color: #000000;
 }
 
 .centralizar{
@@ -113,7 +114,7 @@ body {
 
     display:flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .texto-caixas-topo{
@@ -239,6 +240,10 @@ label{
     background-color: #ffd09a;
     min-width: 2%;
     cursor: pointer;
+}
+
+@media (max-width: 540px){
+    
 }
 
 footer{
