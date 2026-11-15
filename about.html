@@ -1,317 +1,231 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Minhas Olimpiadas</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <body>
+a{
+    color: #000000;
+}
 
-        <header>
-            <h1 class="textos">
-                Medalhei
-            </h1>
-        </header>
+header {
+    padding: 2% 2% 2% 5%;
+    border-bottom: 5px black solid;
+    background-color: #f0c025;
+    display: flex;
+    justify-content: flex-start;
+}
 
-        <main>
-            <div class="centralizar">
-                <div class="bloco-main-text-tras">
-                    <div class="bloco-main-text-frente">
-                        <div class="main-texto">
-                            <p>Clique em cada uma das caixas para abaixar a lista ou abrir a lista completa!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+.textos{
+    font-family: cursive;
+    color: #000000;
+    font-size: xx-large;
+}
 
-        <div class="centralizar" id="button-code1">
-            <button>
-                <div class="textos">
-                    Lista de olimpiadas participadas e medalhas
-                </div>
-            </button>
-        </div>
+.main-texto{
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: xx-large;
+    
+}
 
-        <div class="caixa-olimpiadas-baixo" id="caixa-code1">
-            <div class="olimpiadas">
-                <img src="images/OBMEP.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBMEP 2025:
-                    <ul>
-                        <li> Medalha Estadual Prata</li>
-                        <br>
-                        <li> Medalha Nacional Bronze </li>
-                    </ul>
-                </div>
-            </div>
+.bloco-main-text-tras{
+    margin-top: 2%;
+    padding: 2%;
+    background-image: url("images/Fundo-main-texto.png");
+    max-width: 90%;
+}
 
-            <div class="olimpiadas">
-                <img src="images/OBR.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBR Resgate 2026 Regional & Estadual:
-                    <ul>
-                        <li> Pontuação Regional: 6° lugar</li>
-                        <br>
-                        <li> Pontuação Estadual: 55° lugar</li>
-                    </ul>
+.bloco-main-text-frente{
+    padding: 2%;
+    background-color: #ffe49c;
+}
 
-                    <br>    
+body {
+    background-image: url("images/Fundo.png");
+    font-family: cursive;
+}
 
-                    OBR 2025:
-                    <ul>
-                        <li> Pontuação Regional: 16° lugar</li>
-                    </ul>
-                </div>
-            </div>
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-            <div class="olimpiadas">
-                <img src="images/OBR.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBR Teórica 2026:
-                    <ul>
-                        <li> Medalha Nacional Prata</li>
-                    </ul>
-                </div>
-            </div>
+.foto-olimpiada{
+    border-radius: 50%;
+    margin: 3%;
+    width: 20%;
 
-             <div class="olimpiadas">
-                <img src="images/OBR.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBR Virtual Estadual & Nacional 2026:
-                    <ul>
-                        <li> Pontuação Estadual: 9°</li>
-                        <br>
-                        <li> Pontuação Nacional: 24° lugar</li>
-                    </ul>
-                </div>
-            </div>
+    max-width: 100%;
+}
 
-            <div class="olimpiadas">
-                <img src="images/OMASP-OLISP.svg" class="foto-olimpiada">
-                <div class="textos">
-                    OMASP 2026:
-                    <ul>
-                        <li> Medalha Estadual Ouro </li>
-                    </ul>
+.caixa-olimpiada-topo{
+    border-top: solid 5px;
+    border-left: solid 5px;
+    border-right: solid 5px;
+    border-color: #553b29;
+    padding: 2%;
+    margin: 5% 10% 0px 10%;
+    background-color: #a37758;
+}
 
-                    <br>
+.caixa-olimpiadas-baixo{
+    border: 5px solid;
+    border-color: #773600;
+    padding: 6%;
+    margin: 0px 10% 0% 10%;
+    background-color: #ffd09a;
 
-                    OMASP 2025:
-                    <ul>
-                        <li> Medalha Estadual Ouro </li>
-                    </ul>
-                </div>
-            </div>
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-            <div class="olimpiadas">
-                <img src="images/OMASP-OLISP.svg" class="foto-olimpiada">
-                <div class="textos">
-                    OLISP 2026:
-                    <ul>
-                        <li> Medalha Estadual Prata</li>
-                    </ul>
+.olimpiadas{
+    border: 5px solid;
+    border-radius: 10%;
 
-                    <br>
+    border-color: #968c00;
+    background-color: #ffcc3f;
 
-                    OLISP 2025:
-                    <ul>
-                        <li> Medalha Estadual Bronze</li>
-                    </ul>
-                </div>
-            </div>
+    padding: 5%;
+    margin: 3%;
+    width: 105%;
 
-            <div class="olimpiadas">
-                <img src="images/OBICT.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBICT 2026:
-                    <ul>
-                        <li>Aprovação até a 2.5° fase (não consegui realizar ela)</li>
-                    </ul>
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
 
-                    <br>
+.texto-caixas-topo{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: xx-large;
+}
 
-                    OBICT 2025:
-                    <ul>
-                        <li>Aprovação até a 3° fase (não consegui realizar ela)</li>
-                    </ul>
-                </div>
-            </div>
+button{
+    border: solid 5px;
+    border-color: #553b29;
+    padding: 2%;
+    margin: 5% 10% 0px 10%;
+    background-color: #a37758;
+    cursor: pointer; /* Garante que o cursor seja a 'mãozinha' de link */
+}
 
-            <div class="olimpiadas">
-                <img src="images/ONAD.png" class="foto-olimpiada">
-                <div class="textos">
-                    ONAD 2026:
-                    <ul>
-                        <li>Aprovação até a 2° fase (não consegui realizar ela)</li>
-                    </ul>
+#button-code1{
+    font-family: cursive;
+    color: #000000;
+    font-size: xx-large;
+}
 
-                    <br>
+#button-code2{
+    font-family: cursive;
+    color: #000000;
+    font-size: xx-large;
+}
 
-                    ONAD 2025:
-                    <ul>
-                        <li>Aprovação até a 3° fase (não consegui realizar ela)</li>
-                    </ul>
-                </div>
-            </div>
+#button-code3{
+    font-family: cursive;
+    color: #000000;
+    font-size: xx-large;
+}
 
-            <div class="olimpiadas">
-                <img src="images/ONIA.png" class="foto-olimpiada">
-                <div class="textos">
-                    ONIA 2026:
-                    <ul>
-                        <li>Aprovação até a 3° fase (Ainda não foi realizada)</li>
-                    </ul>
+#caixa-code1{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-                    <br>
-                </div>
-            </div>
-        </div>
+#caixa-code2{
+    display:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-        <div class="centralizar" id="button-code2">
-            <button>
-                <div class="textos">
-                    Lista de olimpiadas para vir e pontuações
-                </div>
-            </button>
-        </div>
+#caixa-code3{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-        <div class="caixa-olimpiadas-baixo" id="caixa-code2"> 
-            <div class="olimpiadas">
-                <img src="images/OBR.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBR 2027:
-                    <ul>
-                        <li> Pontuação esperada: Top 5</li>
-                        <br>
-                        <li>Data Regional: Entre Junho e Agosto</li>
-                        <li>Data Estadual: Final de Setembro</li>
-                        <li>Data Nacional: Novembro</li>
-                    </ul>
-                </div>
-            </div>
+.formulario-caixa-topo{
+    border-top: solid 3px;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    border-color: #66332c;
+    padding: 2%;
+    margin: 5% 10% 0px 10%;
+    background-color: #EFAE44;
+}
 
-            <div class="olimpiadas">
-                <img src="images/OBR.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBR Teórica 2027:
-                    <ul>
-                        <li> Pontuação esperada: 12/15</li>
-                        <br>
-                        <li>Data fase 1: Primeira quinzena de Junho</li>
-                        <li>Data fase 2: Entre 11 e 13 de Agosto</li>
-                    </ul>
-                </div>
-            </div>
+.formulario-caixa-baixo{
+    border: 3px solid;
+    border-color: #333333;
+    padding: 5%;
+    margin: 0px 10% 0% 10%;
+    background-color: #E6B57A;
 
-            <div class="olimpiadas">
-                <img src="images/OBMEP.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBMEP 2027:
-                    <ul>
-                        <li> Pontuação esperada: Medalha Nacional Prata, Medalha Estadual Ouro</li>
-                        <br>
-                        <li>Data fase 1: final de Maio - começo de Junho</li>
-                        <li>Data fase 2: Outubro - Sábado</li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+}
 
-            <div class="olimpiadas">
-                <img src="images/OBM.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBM 2027:
-                    <ul>
-                        <li>Pontuação esperada: </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+.formulario-grupo input, formulario-grupo select, formulario-grupo textarea{
+    width: 100%;
+    padding: 2%;
+    border: #773600 2px solid;
+    border-radius: 12px;
+    font-size: large;
+    margin: 1%;
+}
 
-        <div class="centralizar" id="button-code3">
-            <button>
-                <div class="textos">
-                    Lista de melhores pontuações por ano
-                </div>
-            </button>
-        </div>
+select, input{
+    width: 100%;
+    padding: 2%;
+    border: #773600 2px solid;
+    border-radius: 12px;
+    font-size: large;
+    margin: 1%;
+}
 
-        <div class="caixa-olimpiadas-baixo" id="caixa-code3">
-            <div class="olimpiadas">
-                <img src="images/OMASP-OLISP.svg" class="foto-olimpiada">
-                <div class="textos">
-                    OMASP 2026:
-                    <ul>
-                        <li> Medalha Estatual Ouro </li>
-                    </ul>
+textarea{
+    width: 100%;
+    height: 150%;
+    padding: 2%;
+    border: #773600 2px solid;
+    border-radius: 12px;
+    font-size: large;
+    margin: 1%;
+}
 
-                    <br>
+label{
+    font-size: xx-large;
 
-                    OMASP 2025:
-                    <ul>
-                        <li> Medalha Estatual Ouro </li>
-                    </ul>
-                </div>
-            </div>
+}
 
-            <div class="olimpiadas">
-                <img src="images/OBR.png" class="foto-olimpiada">
-                <div class="textos">
-                    OBR teorica 2026:
+#botao-formulario{
+    border: #333333 2px solid;
+    background-color: #ffd09a;
+    min-width: 2%;
+    cursor: pointer;
+}
 
-                    <ul>
-                        <li> Medalha Nacional Prata </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+footer{
+    border: 5px solid;
+    border-radius: 10%;
+    border-color: #333333;
+    padding: 2%;
+    margin: 2% 5%;
+    background-image: url("images/footer-fundo.png");
+}
 
-        <footer>
-            <div class="textos">
-                <a href="contact.html">Você pode me enviar uma mensagem clicando aqui :)<br> (não funciona de verdade)</a><br>
-                <a href="https://github.com/mkmontesino-glitch">Meu Github! ;)</a><br>
-                <a href="https://www.linkedin.com/in/maria-karla-montesino-negrin-944066439/">Meu Linkedin! :D</a>
-            </div>
-        </footer>
-
-        <script>
-            const botao1 = document.getElementById("button-code1");
-            const caixa1 = document.getElementById("caixa-code1");
-
-            const botao2 = document.getElementById("button-code2");
-            const caixa2 = document.getElementById("caixa-code2");
-
-            const botao3 = document.getElementById("button-code3");
-            const caixa3 = document.getElementById("caixa-code3");
-
-            botao1.addEventListener('click', function() {
-                if (caixa1.style.display == 'none'){
-                    caixa1.style.display = 'block'
-                } else {
-                    caixa1.style.display = 'none'
-                }
-            } );
-
-            botao2.addEventListener('click', function() {
-                if (caixa2.style.display == 'none'){
-                    caixa2.style.display = 'block'
-                } else {
-                    caixa2.style.display = 'none'
-                }
-            } );
-
-            botao3.addEventListener('click', function() {
-                if (caixa3.style.display == 'none'){
-                    caixa3.style.display = 'block'
-                } else {
-                    caixa3.style.display = 'none'
-                }
-            } );
-        </script>
-
-    </body>
-
-</html>
