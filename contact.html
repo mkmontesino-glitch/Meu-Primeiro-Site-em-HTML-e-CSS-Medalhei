@@ -59,10 +59,10 @@
             
             <form method="get">
                 <label for="email">Email</label>
-                <input type="email" placeholder="place.holder@gmail.com">
+                <input type="email" id="email" name="email" placeholder="place.holder@gmail.com" required>
                     
                 <label for="nome">Nome</label>
-                <input type="text" placeholder="Maria Clara">
+                <input type="text" id="nome" name="nome" placeholder="Maria Clara" required>
                     
                 <label for="pronomes">Pronomes</label>
                 <select>
@@ -74,10 +74,10 @@
                 </select>
                     
                 <label for="comentario">Comentário</label>
-                <input type="textarea" id="email" placeholder="Adiciona olimpiada x...">
-            </form>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea>
 
-            <button type="submit" id="botao-formulario">Enviar!</button>
+                <button type="submit" id="botao-formulario" class="animacao-botao">Enviar!</button>
+            </form>
 
         </div>
 
